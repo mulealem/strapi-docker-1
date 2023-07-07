@@ -1,0 +1,12 @@
+version: 1
+name: strapi-app
+environment:
+  - name: strapi
+    type: nodejs
+    version: 14
+    build:
+      - yarn install
+    run:
+      - yarn develop
+    ports:
+      - 1337:1337
